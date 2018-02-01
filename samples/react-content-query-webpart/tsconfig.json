@@ -7,9 +7,12 @@
     "declaration": true,
     "sourceMap": true,
     "experimentalDecorators": true,
+    "pretty": true,
     "skipLibCheck": true,
     "lib": ["es6", "dom"],
     "types": [
+      "react",
+      "react-dom",
       "webpack-env",
       "microsoft-ajax",
       "sharepoint"
