@@ -23,7 +23,7 @@ export default class ContentQuery extends React.Component<IContentQueryProps, IC
   private readonly callbackOnPostRenderName = "onPostRender";
 
 
-  /*************************************************************************************
+  /*************************************************************************************y
    * Stores the timestamps of each async calls in order to wait for the last call in 
    * case multiple calls have been fired in a short lapse of time by updaing the 
    * toolpane too fast
@@ -75,7 +75,7 @@ export default class ContentQuery extends React.Component<IContentQueryProps, IC
             .then(next)
             .catch((error) => {
               // As of August 12th 2017, Log.error doesn't seem to do anything, so I use a console.log on top of it for now.
-              Log.error(_this_.logSource, error, _this_.props.wpContext.serviceScope);
+              //Log.error(_this_.logSource, error, _this_.props.wpContext.serviceScope);
               console.log(error);
               next();
             });
